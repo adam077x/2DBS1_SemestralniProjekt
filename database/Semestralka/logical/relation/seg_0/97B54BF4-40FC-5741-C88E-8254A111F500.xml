@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="uzivatel_pobocka" directorySegmentName="seg_0" id="97B54BF4-40FC-5741-C88E-8254A111F500">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:01:48 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<sourcePk>8EB822E7-234B-E4BC-E18E-1B31FBCBD568</sourcePk>
+<targetPk>8FB0AF69-D868-C45E-5AC8-6DCF92A2D8AB</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EEE7F75D-30CA-1BF0-A856-D391B0DF4FAC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>67D2DA69-20E0-9B08-08F6-4EAA345DFAB9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

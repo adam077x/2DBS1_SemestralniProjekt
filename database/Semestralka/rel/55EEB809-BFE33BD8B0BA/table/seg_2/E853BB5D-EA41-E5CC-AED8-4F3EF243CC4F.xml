@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="E853BB5D-EA41-E5CC-AED8-4F3EF243CC4F" name="fyzicka_schuzka">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>231A6E5B-9290-3E5A-88FB-556B843BE1F8</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_schuzka" id="A7D02715-CB77-5CBA-BC0E-5AFF86245DE8">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>BFA52F29-1525-5F46-3719-474D351A66E1</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C27E60A-731C-9A03-1D5D-219252702EA2" referredColumn="3EF5CF20-3050-F248-07F9-18DE89A1B1F7"/>
+</associations>
+</Column>
+<Column name="umisteni" id="43616F3D-EBA0-FE5E-8FEA-EC670B37457D">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>B1C12E3D-EF02-DA28-8F5A-8C7074DF1C4F</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF9A40BA-BD9F-3885-E414-6BE23E737F4B" name="fyzicka_schuzka_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>095C2FE1-6992-0C98-CA0B-A13DA9F89854</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7D02715-CB77-5CBA-BC0E-5AFF86245DE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63E4E6D2-D8E5-9F56-071E-C29E20ADE337" name="fyzicka_schuzka_schuzka_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>1D3A7E21-8E34-8995-6029-6B599602C1B6</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7D02715-CB77-5CBA-BC0E-5AFF86245DE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="30B6E125-FF49-5B08-9FD8-4CA61CBCDC61" name="zprava">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:42:52 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zprava" id="327364AB-3B90-2024-4F22-F2CD87E85A49">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:44:07 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="titulek" id="076C35E3-4229-A09E-0209-5AEDF23B2AE1">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:45:02 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="popisek" id="C692B52C-D579-44C4-7961-F1703C51B74B">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:46:22 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5000</dataTypeSize>
+<ownDataTypeParameters>5000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="uzavreno" id="AA883DB5-3225-D4BB-131E-20A07608D386">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:49:37 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vytvoreno" id="564E9CE1-3BE6-6162-5E9F-E4BEA996FD94">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:01:49 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="upraveno" id="8A380A4B-00AD-0431-DC0D-D331FD98D464">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:02:44 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzivatel" id="35030383-6BBB-23F1-5005-7B21B88EC51D">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:05:59 UTC</createdTime>
+<generatorID>CA9E4786-4509-E72C-9515-0AE57F6B33AD</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<referedAttribute>61B69EAB-DCDA-1233-F26F-F1B55A5F0E20</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tema" id="8579386F-C76C-B37D-5029-1A126520AE36">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 10:58:00 UTC</createdTime>
+<generatorID>EB56BBDC-D663-9F49-8458-80333EA581BD</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<referedAttribute>2E6DAB7A-0687-81D9-A65E-72A62C382689</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23736CD9-5BCD-6146-83D3-BB8011226B3D" name="Prava PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 07:44:36 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="false"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>327364AB-3B90-2024-4F22-F2CD87E85A49</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

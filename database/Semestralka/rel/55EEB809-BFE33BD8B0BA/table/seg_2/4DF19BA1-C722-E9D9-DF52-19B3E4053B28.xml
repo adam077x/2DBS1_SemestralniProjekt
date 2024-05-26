@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="4DF19BA1-C722-E9D9-DF52-19B3E4053B28" name="opatereni">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>4A030648-01EB-1176-0FF9-C4253966A1CE</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="opatreni_id" id="594E2239-15B9-C0E9-D902-0DF3CD618B06">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>173928C6-98AF-98F3-B6E6-00B7BB762050</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="C09CCD69-9186-32D2-7020-2D8DE16F8264">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>D7525CD2-E8BA-F78C-164C-E82DADA9963F</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zprava_id_zprava" id="B2790848-A627-E238-777E-4F996754F694">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>2D428D58-6D7A-03D6-72F7-19B6E6B96CC0</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FB89F3E-122E-F104-B95D-BBB7C28C5743" referredColumn="57968C90-ABAD-4EFB-0084-C99CE78DF659"/>
+</associations>
+</Column>
+<Column name="naklady" id="D0E3DB77-60BE-6F74-096B-7B84C2968879">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>ADBCEAE7-5670-21C4-5079-7AF1C3A89B2F</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F21F8114-914E-BFB9-959B-F1639A125C83" name="opatereni_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>C468CAFE-404D-B0BB-B13B-CF03E582E147</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="594E2239-15B9-C0E9-D902-0DF3CD618B06"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0CC2139-FD92-E693-00C8-187A80E0643B" name="opatereni_zprava_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>34A41E08-F7E7-4145-3D3C-EDC44BD436F4</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2790848-A627-E238-777E-4F996754F694"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

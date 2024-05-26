@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EEE7F75D-30CA-1BF0-A856-D391B0DF4FAC" name="pobocka">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:18:04 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pobocka" id="D0E7DCE5-D24B-A3D9-FEA8-87F34C198299">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:18:08 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="5FA38ECC-7C77-4F78-8916-CF99AC256976">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:18:48 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="umisteni" id="76653696-14A9-661B-F0C5-861627D81A43">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:19:44 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8EB822E7-234B-E4BC-E18E-1B31FBCBD568" name="Pobocka PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:18:46 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="false"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0E7DCE5-D24B-A3D9-FEA8-87F34C198299</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

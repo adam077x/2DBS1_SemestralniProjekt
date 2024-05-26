@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C4F1998-DEAE-0B77-AEF3-4A8CB8BAB3A0" name="Schuzka_Uzivatel">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Schuzka_id_schuzka" id="C229AA14-C281-8168-2E1A-139DDFC460CA">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89FBE285-94FA-0425-E2FC-C84BCC70644D" referredColumn="52410D7D-51A7-59A9-1DA9-E01C96BAB676"/>
+</associations>
+</Column>
+<Column name="Uzivatel_id_uzivatel" id="1DEF3051-FC2B-66AC-289E-E18B1BE2895C">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC0AEB42-793A-7E1D-DE3C-5AE1BAEF19BD" referredColumn="07B81888-EC38-DA07-B6B9-B4023DBF1AF9"/>
+</associations>
+</Column>
+<Column name="Uzivatel_Pobocka_id_pobocka" id="3B6EAF50-6526-F9E9-D14D-7ADC922B394C">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EC0AEB42-793A-7E1D-DE3C-5AE1BAEF19BD" referredColumn="2A656EFC-A75C-3594-65DF-1752400973C1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="692C0457-9750-A852-D52C-99BD5596C26E" name="Schuzka_Uzivatel_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C229AA14-C281-8168-2E1A-139DDFC460CA"/>
+<colUsage columnID="1DEF3051-FC2B-66AC-289E-E18B1BE2895C"/>
+<colUsage columnID="3B6EAF50-6526-F9E9-D14D-7ADC922B394C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9AAE171-1925-037B-D4D7-64B3BC6A74B4" name="Schuzka_Uzivatel_Schuzka_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>22B31C8F-2C67-DFD2-0C27-551B9EA0C76C</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C229AA14-C281-8168-2E1A-139DDFC460CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDA30997-B28C-2C2A-AD3F-5A2B5B389BB3" name="Schuzka_Uzivatel_Uzivatel_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>22B31C8F-2C67-DFD2-0C27-551B9EA0C76C</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DEF3051-FC2B-66AC-289E-E18B1BE2895C"/>
+<colUsage columnID="3B6EAF50-6526-F9E9-D14D-7ADC922B394C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

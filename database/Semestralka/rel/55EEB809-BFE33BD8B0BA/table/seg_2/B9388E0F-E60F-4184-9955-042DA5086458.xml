@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="B9388E0F-E60F-4184-9955-042DA5086458" name="zprava">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>30B6E125-FF49-5B08-9FD8-4CA61CBCDC61</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zprava" id="57968C90-ABAD-4EFB-0084-C99CE78DF659">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>327364AB-3B90-2024-4F22-F2CD87E85A49</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="titulek" id="A6CB3D1E-757D-B03C-333F-33CB32DCC4F0">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>076C35E3-4229-A09E-0209-5AEDF23B2AE1</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popisek" id="B0753105-883A-FEEC-F9CF-EE9F66F89363">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>C692B52C-D579-44C4-7961-F1703C51B74B</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5000</dataTypeSize>
+<ownDataTypeParameters>5000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uzavreno" id="43EDCC14-92F1-D1B7-EC85-43F95A5789B8">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>AA883DB5-3225-D4BB-131E-20A07608D386</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vytvoreno" id="E1C32AC7-F517-7418-8EE0-129BEFB4DA1A">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>564E9CE1-3BE6-6162-5E9F-E4BEA996FD94</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="upraveno" id="46327A6B-518D-B76E-9069-0E9868C62FE6">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>8A380A4B-00AD-0431-DC0D-D331FD98D464</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uzivatel_id_uzivatel" id="E5DFD640-CDBA-AA37-0FCC-4FACC79AD541">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>35030383-6BBB-23F1-5005-7B21B88EC51D</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="74DE6DA4-180C-54E9-B291-0B416258E4C1" referredColumn="F325E573-50A7-91F4-BD84-C1A66EC012A4"/>
+</associations>
+</Column>
+<Column name="tema_id_tema" id="E0D8ED82-FFFF-B7D1-EF8A-5C0CD80A1D41">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>8579386F-C76C-B37D-5029-1A126520AE36</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB3DE1EE-FC9A-5DEA-3306-41B4BFEC08C3" referredColumn="A53EDA0D-E537-E269-F470-AAC38133E95F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A16DD78-D78B-3065-725F-C00587223B29" name="zprava_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>23736CD9-5BCD-6146-83D3-BB8011226B3D</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57968C90-ABAD-4EFB-0084-C99CE78DF659"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFD0F53D-82FF-10C5-725B-8533EF26EAF4" name="zprava_tema_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>EB56BBDC-D663-9F49-8458-80333EA581BD</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0D8ED82-FFFF-B7D1-EF8A-5C0CD80A1D41"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0321C92A-6B67-3B70-7CAD-55F433ED1F79" name="zprava_uzivatel_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>CA9E4786-4509-E72C-9515-0AE57F6B33AD</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5DFD640-CDBA-AA37-0FCC-4FACC79AD541"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

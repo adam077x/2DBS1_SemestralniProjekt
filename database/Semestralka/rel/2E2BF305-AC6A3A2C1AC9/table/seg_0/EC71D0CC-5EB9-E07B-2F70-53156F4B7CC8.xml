@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC71D0CC-5EB9-E07B-2F70-53156F4B7CC8" name="Uzivatel">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>67D2DA69-20E0-9B08-08F6-4EAA345DFAB9</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_uzivatel" id="07B81888-EC38-DA07-B6B9-B4023DBF1AF9">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>61B69EAB-DCDA-1233-F26F-F1B55A5F0E20</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jmeno" id="AF14FD46-1E91-CEA3-0CC0-1E491C69DE94">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>4FA34F67-0344-F4C3-C788-53F12A40EBC9</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stredni_jmeno" id="D4705ACF-EA33-C0EE-FBA8-2A51451774CB">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>72C62943-CA7C-881F-BA6C-65F9AEB15148</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prijmeni" id="0839B6B1-B6A5-9513-C5B5-DFC2D38E8D33">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>406AC15F-F008-F780-76AD-53731445C57B</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="F4D38F5B-DE5B-CF7E-A2F1-A825AE85AB8C">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>010E25F4-CBC8-090C-12DD-AEF027F3DDE1</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefonni_cislo" id="18506F1C-F461-3040-5F21-FF3C1D06E9B6">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>DD48BA20-FF23-017F-4EBD-6FE54E75E719</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pobocka_id_pobocka" id="2A656EFC-A75C-3594-65DF-1752400973C1">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>34D33125-2E27-DBBD-E041-E468FFD0F30B</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BA3AF5B6-0560-77FF-5D63-7220FDEC2B8F" referredColumn="B9FC9D4C-9873-1E44-2F1E-7B5FF3518A6B"/>
+</associations>
+</Column>
+<Column name="Prava_id_prava" id="030A5AED-69CA-23A8-4878-D2A795567E8B">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>FBEAF3E2-CA7A-76A7-08A9-89094A870A8A</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1E0BE7BD-F15F-258F-5800-6D20E75984E3" referredColumn="2EC8A989-F8BD-C0CF-F308-7CB87DC79A14"/>
+</associations>
+</Column>
+<Column name="Kontakt_id_kontakt" id="C0E95FFE-B81A-756F-61C7-F84D22ED2833">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>3D319389-B155-DD15-5CD9-37F2B503F58C</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9123980D-F0FC-8671-01AA-1259912E4D8A" referredColumn="50DD8312-CA56-BD6E-AA65-7496B7FD32DF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EAEB379A-0448-9699-B75D-8C3703E214C6" name="Uzivatel_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>8FB0AF69-D868-C45E-5AC8-6DCF92A2D8AB</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07B81888-EC38-DA07-B6B9-B4023DBF1AF9"/>
+<colUsage columnID="2A656EFC-A75C-3594-65DF-1752400973C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4808F5AA-D4F1-BC22-22D3-0B33A0836879" name="Uzivatel_email_UN">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>A6EFBB51-977E-1738-45C6-0CF7A4E45426</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4D38F5B-DE5B-CF7E-A2F1-A825AE85AB8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97BC1478-40D5-A6D3-9D01-58F0F101AFC6" name="Uzivatel_Kontakt_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>E48F5012-6351-A51C-78EE-735534699430</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0E95FFE-B81A-756F-61C7-F84D22ED2833"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9890BB12-60C4-A31A-472F-A96E65906FE5" name="Uzivatel_Pobocka_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>97B54BF4-40FC-5741-C88E-8254A111F500</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A656EFC-A75C-3594-65DF-1752400973C1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED5C1A4F-D2A6-8E74-4655-6F7ED1FE1625" name="Uzivatel_Prava_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>482BACF7-1CD9-1A35-3CD9-6A672AF702D0</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="030A5AED-69CA-23A8-4878-D2A795567E8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

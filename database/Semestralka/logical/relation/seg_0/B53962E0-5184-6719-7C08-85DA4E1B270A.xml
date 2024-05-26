@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="zprava_schuzka" directorySegmentName="seg_0" id="B53962E0-5184-6719-7C08-85DA4E1B270A">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:27:40 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<sourcePk>23736CD9-5BCD-6146-83D3-BB8011226B3D</sourcePk>
+<targetPk>095C2FE1-6992-0C98-CA0B-A13DA9F89854</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>30B6E125-FF49-5B08-9FD8-4CA61CBCDC61</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>39154EDA-609E-AAC3-93E4-69D47762BA6D</targetEntity>
+<transferable>true</transferable>
+</Relation>

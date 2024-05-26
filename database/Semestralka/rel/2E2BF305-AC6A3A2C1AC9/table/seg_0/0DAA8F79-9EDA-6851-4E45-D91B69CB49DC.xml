@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0DAA8F79-9EDA-6851-4E45-D91B69CB49DC" name="Schuzka">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>39154EDA-609E-AAC3-93E4-69D47762BA6D</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_schuzka" id="52410D7D-51A7-59A9-1DA9-E01C96BAB676">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>BFA52F29-1525-5F46-3719-474D351A66E1</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cas" id="7F935AD5-5E3E-7DB4-82F8-09AC62A36113">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>16C6993D-DA93-52A1-BFB5-5F5AF281564C</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="popis" id="18DCE407-8AFB-518E-8C91-D92C449B00FC">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>74187823-C9D8-59F6-8B23-9061BF9375B1</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8CD59CE9-B421-0CB1-C602-C9FDDE5443A5" name="Schuzka_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>095C2FE1-6992-0C98-CA0B-A13DA9F89854</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52410D7D-51A7-59A9-1DA9-E01C96BAB676"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

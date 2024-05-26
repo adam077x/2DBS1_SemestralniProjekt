@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9D31A29-606E-D2BB-2D16-68F06AAC3E80" name="Zpetna_vazba">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>93EE300E-BEFC-52AF-1E5F-460E4CAF30D1</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_zpetna_vazba" id="709CB67E-4886-E550-033C-8D86A028066F">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>59EBAABA-D1DA-89C6-1CDA-7BAB29E1A332</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zpetna_vazba" id="1497F87C-C5B9-52B8-D5E1-B4878DCA8AE3">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>BA3A1D4B-34F6-6575-3AF3-59537C825CFD</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Zprava_id_zprava" id="4463EC0A-703B-74AF-5006-7AF5A1AAD070">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>2FE6C747-D36F-513B-95B4-459BC98654E8</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24D0EDFD-88A6-68FF-8729-83584566037C" referredColumn="7F329BB2-235E-FB10-B04D-29DAA7A9B51B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="64A63E1E-602C-2C7D-A887-09577D0A1855" name="Zpetna_vazba_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>6597F854-5ADC-83F3-EF91-02A30EA6478A</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="709CB67E-4886-E550-033C-8D86A028066F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4B861AA-6F9E-4AA7-C755-AAB49C1CD9E3" name="Zpetna_vazba_Zprava_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:11:08 UTC</createdTime>
+<generatorID>55552499-1E9F-D935-35E4-896839719B1E</generatorID>
+<ownerDesignName>SemetralniProjekt</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4463EC0A-703B-74AF-5006-7AF5A1AAD070"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

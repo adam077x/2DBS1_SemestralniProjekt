@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_2" id="73DE69E3-0D99-156F-5288-370EB381A0BD" name="prava">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>8A31A7F3-E2C5-E03E-3E28-4F2AAB6F7AF8</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_prava" id="4BAAFE28-A53F-2E8B-FDBB-E363B2A5E980">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>FB584944-B3C4-012A-E3AB-186AAB05A311</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazev" id="56F16E83-EE7D-54F3-7216-740A6CE4193C">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>35EFCD81-42D6-D77E-B369-626EF361EEEF</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1FB80586-3434-CE98-C0AD-B8F16F5755EC" name="prava_PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>814B967A-BF63-012E-45B0-462C3A887328</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BAAFE28-A53F-2E8B-FDBB-E363B2A5E980"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

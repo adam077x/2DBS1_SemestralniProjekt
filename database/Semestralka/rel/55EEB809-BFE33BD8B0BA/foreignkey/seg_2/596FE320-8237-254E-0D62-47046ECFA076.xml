@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="596FE320-8237-254E-0D62-47046ECFA076" containerWithKeyObject="7A2CB16E-B9DE-C158-0660-2DC11CD19DA6" localFKIndex="988361C7-E51E-66FF-F935-D553FF2B8A21" name="online_schuzka_schuzka_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>6BE20B1C-9501-A278-8C56-4DC1783D7CE3</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<referredTableLongName>schuzka</referredTableLongName>
+<arc>FE058177-3A12-BBB1-88C7-08D7C268B014</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B57E4BD9-4C7B-3A5B-8DB3-54F76F0B4183</referredTableID>
+<keyObject>FA429792-A247-2F67-59FB-07FF590019C5</keyObject>
+<referredKeyID>FA429792-A247-2F67-59FB-07FF590019C5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_schuzka</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>online_schuzka</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="93EE300E-BEFC-52AF-1E5F-460E4CAF30D1" name="zpetna_vazba">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:32:48 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zpetna_vazba" id="59EBAABA-D1DA-89C6-1CDA-7BAB29E1A332">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:32:56 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="zpetna_vazba" id="BA3A1D4B-34F6-6575-3AF3-59537C825CFD">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:33:11 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2000</dataTypeSize>
+<ownDataTypeParameters>2000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zprava" id="2FE6C747-D36F-513B-95B4-459BC98654E8">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 09:05:26 UTC</createdTime>
+<generatorID>55552499-1E9F-D935-35E4-896839719B1E</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<referedAttribute>327364AB-3B90-2024-4F22-F2CD87E85A49</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_uzivatel" id="8FE485A4-6451-2886-9992-72A6E656E4CA">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 12:47:13 UTC</createdTime>
+<generatorID>5EAABBA3-3307-CA93-5244-2CD4A2CE4ABF</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="true"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<referedAttribute>61B69EAB-DCDA-1233-F26F-F1B55A5F0E20</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6597F854-5ADC-83F3-EF91-02A30EA6478A" name="Zpetna_vazba PK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 08:34:00 UTC</createdTime>
+<ownerDesignName>Semestralka</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="55EEB809-951E-12C9-54F5-BFE33BD8B0BA" value="false"/>
+<item key="2E2BF305-714F-9CD9-220C-AC6A3A2C1AC9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59EBAABA-D1DA-89C6-1CDA-7BAB29E1A332</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

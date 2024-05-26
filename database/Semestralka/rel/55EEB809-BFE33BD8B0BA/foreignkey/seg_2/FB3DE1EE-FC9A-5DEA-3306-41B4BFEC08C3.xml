@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="FB3DE1EE-FC9A-5DEA-3306-41B4BFEC08C3" containerWithKeyObject="B9388E0F-E60F-4184-9955-042DA5086458" localFKIndex="EFD0F53D-82FF-10C5-725B-8533EF26EAF4" name="zprava_tema_FK">
+<createdBy>spravce</createdBy>
+<createdTime>2024-04-05 14:40:49 UTC</createdTime>
+<generatorID>EB56BBDC-D663-9F49-8458-80333EA581BD</generatorID>
+<ownerDesignName>Semestralka</ownerDesignName>
+<referredTableLongName>tema</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D9FB5198-42AF-F467-3DA6-18414A369BEB</referredTableID>
+<keyObject>10769B9F-50A9-9D29-8A4A-3BA88C68D137</keyObject>
+<referredKeyID>10769B9F-50A9-9D29-8A4A-3BA88C68D137</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tema</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
