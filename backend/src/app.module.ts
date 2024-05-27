@@ -12,9 +12,15 @@ import { DocumentService } from './document/document.service';
 import { MeetingController } from './meeting/meeting.controller';
 import { MeetingService } from './meeting/meeting.service';
 import { DatabaseService } from './database/database.service';
+import { JwtModule } from '@nestjs/jwt';
 
 @Module({
-  imports: [],
+  imports: [
+    JwtModule.register({
+      secret: 'secret',
+      signOptions: { expiresIn: '1h' },
+    }),
+  ],
   controllers: [
     UserController,
     ReportController,

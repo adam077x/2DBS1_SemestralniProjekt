@@ -6,6 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
+import { AuthService } from '../services/user/auth.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -24,14 +26,21 @@ import { MatCardModule } from '@angular/material/card';
 })
 export class LoginComponent {
   private fb = inject(FormBuilder);
-  addressForm = this.fb.group({
+  loginForm = this.fb.group({
     email: null,
     password: null,
   });
 
-  hasUnitNumber = false;
+  constructor(private authService: AuthService, private router: Router) {}
 
   onSubmit(): void {
-    alert('Thanks!');
+    if(!this.loginForm.value.email || !this.loginForm.value.password) return console.error('Email a heslo musí být vyplněny');
+
+    this.authService.prihlasit(this.loginForm.value.email, this.loginForm.value.password).subscribe({
+      next: (response) => {
+        this.router.navigate(['/reports'])
+      },
+      error: (err) => console.error('Login failed', err)
+    });
   }
 }
