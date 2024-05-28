@@ -17,11 +17,16 @@ export class ReportService {
       temaId,
       result_cursor: { dir: oracledb.BIND_OUT, type: oracledb.CURSOR },
     });
+
     const resultSet = result.outBinds.result_cursor;
     let row;
     const reports = [];
     while ((row = await resultSet.getRow())) {
-      reports.push(row);
+      const lowerCaseRow = {};
+      for (const key in row) {
+        lowerCaseRow[key.toLowerCase()] = row[key];
+      }
+      reports.push(lowerCaseRow);
     }
     await resultSet.close();
     return reports;
@@ -48,22 +53,20 @@ export class ReportService {
   }
 
   async VytvoritZpravu(
-    temaId: number,
-    nazev: string,
+    titulek: string,
     popis: string,
-    datum: Date,
     uzivatelId: number,
+    temaId: number,
   ): Promise<void> {
     const query = `
       BEGIN
-        VytvoritZpravu(:temaId, :nazev, :popis, :datum, :uzivatelId);
+        VytvoritZpravu(:titulek, :popis, :uzivatelId, :temaId);
       END;
     `;
     await this.databaseService.execute(query, {
-      temaId,
-      nazev,
+      titulek,
       popis,
-      datum,
+      temaId,
       uzivatelId,
     });
   }

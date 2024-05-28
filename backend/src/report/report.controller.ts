@@ -1,5 +1,15 @@
 // src/report/report.controller.ts
-import { Controller, Get, Post, Put, Body, Param, Query } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Body,
+  Param,
+  Query,
+  HttpStatus,
+  HttpCode,
+} from '@nestjs/common';
 import { ReportService } from './report.service';
 
 @Controller('reports')
@@ -17,22 +27,21 @@ export class ReportController {
   }
 
   @Post('zprava')
+  @HttpCode(HttpStatus.CREATED)
   async VytvoritZpravu(
     @Body()
     body: {
       temaId: number;
       nazev: string;
       popis: string;
-      datum: Date;
       uzivatelId: number;
     },
   ) {
     await this.reportService.VytvoritZpravu(
-      body.temaId,
       body.nazev,
       body.popis,
-      body.datum,
       body.uzivatelId,
+      body.temaId,
     );
   }
 
