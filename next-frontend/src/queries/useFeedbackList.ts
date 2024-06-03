@@ -10,7 +10,7 @@ export const useFeedbackList = (id_zpravy: number) =>
   useQuery({
     queryKey: ['contacts', 'contact', id_zpravy],
     queryFn: async () => {
-      const response = await api.get<ContactT[]>('/feedback/zpetne_vazby', {
+      const response = await api.get<FeedbackT[]>('/feedback/zpetne_vazby', {
         data: { id_zpravy },
       });
 
