@@ -3,6 +3,7 @@
 import { useReport } from '@/queries/useReport';
 import { CircularProgress, Stack, Typography } from '@mui/material';
 import TextLabel from '../misc/TextLabel';
+import Contacts from '../contact/Contacts';
 
 const ReportFull = ({ id }: { id: number }) => {
   const { data, isLoading } = useReport(id);
@@ -40,6 +41,8 @@ const ReportFull = ({ id }: { id: number }) => {
         </Stack>
       )}
       {isLoading && <CircularProgress />}
+
+      <Contacts id_zprava={id} />
     </Stack>
   );
 };
