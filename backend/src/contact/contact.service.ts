@@ -20,7 +20,7 @@ export class ContactService {
         VytvoritKontakt(:jmeno, :stredni_jmeno, :prijmeni, :telefonni_cislo, :email, :popis, :zpravaId);
       END;
     `;
-    await this.databaseService.execute(query, {
+    return await this.databaseService.execute(query, {
       jmeno,
       stredni_jmeno,
       prijmeni,

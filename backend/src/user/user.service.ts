@@ -45,7 +45,11 @@ export class UserService {
     let row;
     const users = [];
     while ((row = await resultSet.getRow())) {
-      users.push(row);
+      users.push(
+        Object.fromEntries(
+          Object.entries(row).map(([key, value]) => [key.toLowerCase(), value]),
+        ),
+      );
     }
     await resultSet.close();
     return users;

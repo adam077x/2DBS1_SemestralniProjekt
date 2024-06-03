@@ -19,7 +19,7 @@ export class ContactController {
       zpravaId: number;
     },
   ) {
-    await this.contactService.VytvoritKontakt(
+    return await this.contactService.VytvoritKontakt(
       body.jmeno,
       body.stredni_jmeno,
       body.prijmeni,

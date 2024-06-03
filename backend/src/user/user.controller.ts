@@ -35,7 +35,8 @@ export class UserController {
 
     const jwt = await this.jwtService.signAsync(user[0]);
 
-    await res.cookie('jwt', jwt, { httpOnly: true, secure: true });
+    console.log('Setting cookie:', jwt); // Log the JWT
+    res.cookie('jwt', jwt, { httpOnly: true });
 
     return {
       jwt,
@@ -45,7 +46,7 @@ export class UserController {
 
   @Get('uzivatele')
   async NacistUzivatele(@Query('id_uzivatele') id_uzivatele: number) {
-    return this.userService.NacistUzivatele(id_uzivatele);
+    return await this.userService.NacistUzivatele(id_uzivatele);
   }
 
   @Post('uzivatele')

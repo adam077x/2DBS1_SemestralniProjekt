@@ -37,7 +37,7 @@ export class ReportController {
       uzivatelId: number;
     },
   ) {
-    await this.reportService.VytvoritZpravu(
+    return await this.reportService.VytvoritZpravu(
       body.nazev,
       body.popis,
       body.uzivatelId,
