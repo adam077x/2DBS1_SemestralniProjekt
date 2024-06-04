@@ -1,7 +1,6 @@
-// src/report/report.service.ts
 import { Injectable } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
-import * as oracledb from 'oracledb'; // Import oracledb
+import * as oracledb from 'oracledb';
 
 @Injectable()
 export class ReportService {
@@ -86,6 +85,7 @@ export class ReportService {
       reports.push(lowerCaseRow);
     }
     await resultSet.close();
+    this.databaseService.commit();
     return reports[0];
   }
 

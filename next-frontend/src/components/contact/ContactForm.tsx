@@ -4,7 +4,7 @@ import { useFormik } from 'formik';
 import { useRouter } from 'next/navigation';
 import { object, string } from 'yup';
 
-const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
+const ContactForm = ({ stage, id }: { stage: number; id?: number }) => {
   const router = useRouter();
 
   const { mutate, isPending, error } = useCreateContact({
@@ -31,13 +31,13 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
       popis: string().required('Required'),
     }),
     onSubmit: (values) => {
-      if(!id) {
+      if (!id) {
         throw new Error('Missing report id');
       }
 
       mutate({
         ...values,
-        zpravaId: id,
+        zpravaId: Number(id),
       });
     },
   });
@@ -45,7 +45,7 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
   return (
     <Container maxWidth="sm">
       <Typography variant="h4" component="h1" gutterBottom>
-        Kontakt
+        Kontakty
       </Typography>
       <form onSubmit={formik.handleSubmit}>
         <TextField
@@ -57,7 +57,6 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
           {...formik.getFieldProps('jmeno')}
           error={formik.touched.jmeno && Boolean(formik.errors.jmeno)}
           helperText={formik.touched.jmeno && formik.errors.jmeno}
-          required
         />
 
         <TextField
@@ -69,7 +68,6 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
           {...formik.getFieldProps('stredni_jmeno')}
           error={formik.touched.stredni_jmeno && Boolean(formik.errors.stredni_jmeno)}
           helperText={formik.touched.stredni_jmeno && formik.errors.stredni_jmeno}
-          required
         />
 
         <TextField
@@ -81,7 +79,6 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
           {...formik.getFieldProps('prijmeni')}
           error={formik.touched.prijmeni && Boolean(formik.errors.prijmeni)}
           helperText={formik.touched.prijmeni && formik.errors.prijmeni}
-          required
         />
 
         <TextField
@@ -93,7 +90,6 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
           {...formik.getFieldProps('email')}
           error={formik.touched.email && Boolean(formik.errors.email)}
           helperText={formik.touched.email && formik.errors.email}
-          required
         />
 
         <TextField
@@ -105,7 +101,17 @@ const ContactForm = ({ stage, id }: { stage: number, id?: number }) => {
           {...formik.getFieldProps('telefonni_cislo')}
           error={formik.touched.telefonni_cislo && Boolean(formik.errors.telefonni_cislo)}
           helperText={formik.touched.telefonni_cislo && formik.errors.telefonni_cislo}
-          required
+        />
+
+        <TextField
+          label="Popis"
+          type="text"
+          fullWidth
+          margin="normal"
+          variant="outlined"
+          {...formik.getFieldProps('popis')}
+          error={formik.touched.popis && Boolean(formik.errors.popis)}
+          helperText={formik.touched.popis && formik.errors.popis} 
         />
 
         <Button type="submit" variant="contained" color="primary" fullWidth disabled={isPending}>

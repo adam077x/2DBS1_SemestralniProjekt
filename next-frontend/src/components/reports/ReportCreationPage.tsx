@@ -4,6 +4,8 @@ import ContactForm from '@/components/contact/ContactForm';
 import Flow, { Stage } from '@/components/misc/Flow';
 import ReportForm from '@/components/reports/ReportForm';
 import { Stack } from '@mui/material';
+import Contacts from '../contact/Contacts';
+import ContactFlowPart from '../contact/ContactFlowPart';
 
 const ReportCreationPage = ({ stage, id }: { stage: number; id?: number }) => {
   const stages: Stage[] = [
@@ -12,7 +14,7 @@ const ReportCreationPage = ({ stage, id }: { stage: number; id?: number }) => {
       name: 'Vytvořit zprávu',
     },
     {
-      component: <ContactForm stage={stage} id={id} />,
+      component: <ContactFlowPart id={id} stage={stage} />,
       name: 'Vytvořit kontakty',
     },
   ];

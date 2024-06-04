@@ -13,6 +13,8 @@ import { MeetingController } from './meeting/meeting.controller';
 import { MeetingService } from './meeting/meeting.service';
 import { DatabaseService } from './database/database.service';
 import { JwtModule } from '@nestjs/jwt';
+import { MeasuresController } from './measures/measures.controller';
+import { MeasuresService } from './measures/measures.service';
 
 @Module({
   imports: [
@@ -28,6 +30,7 @@ import { JwtModule } from '@nestjs/jwt';
     ContactController,
     DocumentController,
     MeetingController,
+    MeasuresController,
   ],
   providers: [
     UserService,
@@ -37,6 +40,7 @@ import { JwtModule } from '@nestjs/jwt';
     DocumentService,
     MeetingService,
     DatabaseService,
+    MeasuresService,
   ],
 })
 export class AppModule {}

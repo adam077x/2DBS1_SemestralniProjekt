@@ -10,12 +10,16 @@ export type Stage = {
 
 const Flow = ({ stage, stages }: { stage: number; stages: Stage[] }) => {
   return (
-    <Stack>
-      <Stack>
+    <Stack gap={2}>
+      {/*      <Stack direction="row" gap={2}>
         {stages.map((s, i) => {
-          return <Typography key={i}>{s.name}</Typography>;
+          return (
+            <Typography key={i} color={i + 1 <= stage ? 'black' : 'grey'}>
+              {s.name}
+            </Typography>
+          );
         })}
-      </Stack>
+      </Stack>*/}
 
       {stages.map((s, i) => {
         if (i + 1 !== Number(stage)) {

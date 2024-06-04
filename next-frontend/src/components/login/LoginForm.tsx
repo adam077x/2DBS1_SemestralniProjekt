@@ -14,6 +14,7 @@ const LoginForm = () => {
     onSuccess: () => {
       console.log(data);
       document.cookie = `jwt=${data?.jwt}; path=/`;
+      localStorage.setItem('logged', 'true');
       router.push('/');
     },
   });

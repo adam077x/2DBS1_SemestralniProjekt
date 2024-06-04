@@ -10,7 +10,7 @@ const Measure = ({ popis, naklady }: MeasurePropsT) => {
   return (
     <Stack>
       <TextLabel label="Popis" text={popis} />
-      <TextLabel label="Náklady" text={naklady.toString()} />
+      <TextLabel label="Náklady" text={naklady ? `${naklady.toString()}$` : 'Nejsou'} />
     </Stack>
   );
 };

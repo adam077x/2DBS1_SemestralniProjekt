@@ -4,6 +4,10 @@ import { useReport } from '@/queries/useReport';
 import { CircularProgress, Stack, Typography } from '@mui/material';
 import TextLabel from '../misc/TextLabel';
 import Contacts from '../contact/Contacts';
+import FeedbackForm from '../feedback/FeedbackForm';
+import FeedbackList from '../feedback/FeedbackList';
+import Measures from '../measures/Measures';
+import MeasureForm from '../measures/MeasureForm';
 
 const ReportFull = ({ id }: { id: number }) => {
   const { data, isLoading } = useReport(id);
@@ -29,20 +33,21 @@ const ReportFull = ({ id }: { id: number }) => {
             <TextLabel text={data.email_1} label="Email"></TextLabel>
             <TextLabel text={data.telefonni_cislo_1} label="Telefonní číslo"></TextLabel>
           </Stack>
-
-          <Stack>
-            <Typography variant="h5">Kontakt</Typography>
-            <TextLabel text={data.jmeno || 'Není'} label="Jméno"></TextLabel>
-            <TextLabel text={data.stredni_jmeno || 'Není'} label="Střední jméno"></TextLabel>
-            <TextLabel text={data.prijmeni || 'Není'} label="Přijmení"></TextLabel>
-            <TextLabel text={data.email || 'Není'} label="Email"></TextLabel>
-            <TextLabel text={data.telefonni_cislo || 'Není'} label="Telefonní číslo"></TextLabel>
-          </Stack>
         </Stack>
       )}
       {isLoading && <CircularProgress />}
 
+      <Typography variant="h5">Kontakty</Typography>
       <Contacts id_zprava={id} />
+
+      <Typography variant="h5">Zpětná vazba</Typography>
+
+      <FeedbackList id_zpravy={id} />
+      <FeedbackForm id={id} />
+
+      <Typography variant="h5">Opatření</Typography>
+      <Measures id_zprava={id} />
+      <MeasureForm id={id} />
     </Stack>
   );
 };

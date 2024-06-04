@@ -1,7 +1,7 @@
 'use client';
 
 import { ReportT } from '@/queries/useReports';
-import { Button, ListItem, ListItemText } from '@mui/material';
+import { Button, Divider, ListItem, ListItemText, Stack } from '@mui/material';
 import { useRouter } from 'next/navigation';
 
 const Report = ({
@@ -17,13 +17,19 @@ const Report = ({
   const router = useRouter();
 
   return (
-    <ListItem key={id_zprava}>
-      <ListItemText
-        primary={titulek}
-        secondary={`Created: ${new Date(vytvoreno).toLocaleString()} - Updated: ${new Date(upraveno).toLocaleString()}`}
-      />
-      <Button onClick={() => router.push(`/report/${id_zprava}`)}>Open Report</Button>
-    </ListItem>
+    <>
+      <Stack bgcolor="aliceblue" my={1}>
+        <ListItem key={id_zprava}>
+          <ListItemText
+            primary={titulek}
+            secondary={`Created: ${new Date(vytvoreno).toLocaleString()} - Updated: ${new Date(upraveno).toLocaleString()}`}
+          />
+          <Button onClick={() => router.push(`/report/${id_zprava}`)}>Open Report</Button>
+        </ListItem>
+      </Stack>
+
+      <Divider />
+    </>
   );
 };
 

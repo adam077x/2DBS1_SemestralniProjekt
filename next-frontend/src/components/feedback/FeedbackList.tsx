@@ -9,7 +9,16 @@ const FeedbackList = ({ id_zpravy }: { id_zpravy: number }) => {
     <Stack>
       {isLoading && <CircularProgress />}
       {!isLoading &&
-        data?.map((feedback) => <Feedback zpetna_vazba={feedback.zpetna_vazba} key={feedback.id_zpetna_vazba} />)}
+        data?.map((feedback) => (
+          <Feedback
+            zpetna_vazba={feedback.zpetna_vazba}
+            key={feedback.id_zpetna_vazba}
+            email={feedback.email}
+            jmeno={feedback.jmeno}
+            stredni_jmeno={feedback.stredni_jmeno}
+            prijmeni={feedback.prijmeni}
+          />
+        ))}
     </Stack>
   );
 };

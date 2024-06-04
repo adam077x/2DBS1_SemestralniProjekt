@@ -1,10 +1,15 @@
 // src/contact/contact.controller.ts
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { ContactService } from './contact.service';
 
 @Controller('contacts')
 export class ContactController {
   constructor(private readonly contactService: ContactService) {}
+
+  @Get('kontakty/:id_zpravy')
+  async NacistKontakty(@Param('id_zpravy') id_zpravy: number) {
+    return await this.contactService.NacistKontakty(id_zpravy);
+  }
 
   @Post('kontakt')
   async VytvoritKontakt(

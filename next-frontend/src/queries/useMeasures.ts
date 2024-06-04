@@ -11,7 +11,7 @@ export const useMeausres = ({ id_zprava }: { id_zprava: number }) =>
   useQuery({
     queryKey: ['measures', id_zprava],
     queryFn: async () => {
-      const response = await api.get<MeasuresT[]>('/measures');
+      const response = await api.get<MeasuresT[]>(`/measures/opatreni/${id_zprava}`);
 
       return response.data;
     },

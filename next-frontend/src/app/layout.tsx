@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import ThemeProvider from '../components/ThemeProvider';
 import QueryClientProvider from '../components/QueryClientProvider';
 import { Stack } from '@mui/material';
+import Navigation from '@/components/navigation/Navigation';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -18,7 +19,10 @@ export default function RootLayout({
       <body>
         <QueryClientProvider>
           <ThemeProvider>
-            <Stack mx={5}>{children}</Stack>
+            <Navigation />
+            <Stack mx={5} my={2}>
+              {children}
+            </Stack>
           </ThemeProvider>
         </QueryClientProvider>
       </body>

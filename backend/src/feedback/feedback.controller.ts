@@ -1,10 +1,14 @@
-// src/feedback/feedback.controller.ts
-import { Controller, Post, Body } from '@nestjs/common';
+import { Controller, Post, Body, Get, Param } from '@nestjs/common';
 import { FeedbackService } from './feedback.service';
 
 @Controller('feedback')
 export class FeedbackController {
   constructor(private readonly feedbackService: FeedbackService) {}
+
+  @Get('zpetnevazby/:zpravaId')
+  async NacistZpetneVazby(@Param('zpravaId') zpravaId: number) {
+    return await this.feedbackService.NacistZpetneVazby(zpravaId);
+  }
 
   @Post('zpetnavazba')
   async VytvoritZpetnouVazbu(
@@ -12,15 +16,13 @@ export class FeedbackController {
     body: {
       zpravaId: number;
       uzivatelId: number;
-      komentar: string;
-      hodnoceni: number;
+      zpetnaVazba: string;
     },
   ) {
     await this.feedbackService.VytvoritZpetnouVazbu(
       body.zpravaId,
       body.uzivatelId,
-      body.komentar,
-      body.hodnoceni,
+      body.zpetnaVazba,
     );
   }
 }

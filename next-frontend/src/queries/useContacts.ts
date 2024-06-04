@@ -15,9 +15,7 @@ export const useContacts = (id_zpravy: number) =>
   useQuery({
     queryKey: ['contacts', 'contact', id_zpravy],
     queryFn: async () => {
-      const response = await api.get<ContactT[]>('/contacts/kontakty', {
-        data: { id_zpravy },
-      });
+      const response = await api.get<ContactT[]>(`/contacts/kontakty/${id_zpravy}`);
 
       return response.data;
     },

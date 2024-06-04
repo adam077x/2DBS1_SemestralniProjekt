@@ -19,4 +19,8 @@ export class DatabaseService implements OnModuleInit, OnModuleDestroy {
       outFormat: oracledb.OUT_FORMAT_OBJECT,
     });
   }
+
+  commit() {
+    this.connection.commit();
+  }
 }
