@@ -8,7 +8,7 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20001, 'Název dokumentu musí dodržovat strukturu cislopracovnika_nazev_koncovka.');
     END IF;
 END;
-/
+
 
 CREATE OR REPLACE TRIGGER check_email_format
 BEFORE INSERT OR UPDATE ON uzivatel
@@ -20,14 +20,11 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20002, 'Email musí obsahovat platný formát jmeno@domena.xx.');
     END IF;
 END;
-/
 
-CREATE OR REPLACE TRIGGER check_schuzka_datum
-BEFORE INSERT OR UPDATE ON schuzka
+
+CREATE OR REPLACE TRIGGER update_zprava_upraveno
+BEFORE UPDATE ON zprava
 FOR EACH ROW
 BEGIN
-    IF :NEW.datum < SYSDATE THEN
-        RAISE_APPLICATION_ERROR(-20003, 'Schůzka nemůže být naplánována do minulosti.');
-    END IF;
+    :NEW.upraveno := SYSTIMESTAMP;
 END;
-/

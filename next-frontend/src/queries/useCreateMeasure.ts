@@ -1,8 +1,19 @@
 import { getQueryClient } from '@/components/QueryClientProvider';
 import { api } from '@/utils/axiosConfig';
-import { useMutation } from '@tanstack/react-query';
+import { UseMutationOptions, useMutation } from '@tanstack/react-query';
 
-export const useCreateMeasure = () =>
+export const useCreateMeasure = (
+  options?: UseMutationOptions<
+    {},
+    Error,
+    {
+      popis: string;
+      zpravaId: number;
+      naklady: number | null;
+    },
+    unknown
+  >,
+) =>
   useMutation<{}, Error, { popis: string; zpravaId: number; naklady: number | null }>({
     mutationKey: ['measures', 'measure'],
     mutationFn: async (values) => {
@@ -18,4 +29,5 @@ export const useCreateMeasure = () =>
 
       return response.data;
     },
+    ...options,
   });

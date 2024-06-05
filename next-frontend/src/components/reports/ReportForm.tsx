@@ -24,8 +24,8 @@ const ReportForm = ({ stage }: { stage: number }) => {
       uzivatelId: 1,
     },
     validationSchema: object({
-      nazev: string().required('Required'),
-      popis: string().required('Required'),
+      nazev: string().required('Zadejte název zprávy'),
+      popis: string().required('Zadejte popis zprávy'),
       temaId: string().required('Required'),
       uzivatelId: string().required('Required'),
     }),

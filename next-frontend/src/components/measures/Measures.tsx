@@ -1,5 +1,5 @@
 import { useMeausres } from '@/queries/useMeasures';
-import { CircularProgress, Stack } from '@mui/material';
+import { CircularProgress, Divider, Stack } from '@mui/material';
 import Measure from './Measure';
 
 const Measures = ({ id_zprava }: { id_zprava: number }) => {
@@ -9,7 +9,16 @@ const Measures = ({ id_zprava }: { id_zprava: number }) => {
     <Stack>
       {!isLoading && (
         <Stack>
-          {data?.map((measure) => <Measure key={measure.id_zprava} popis={measure.popis} naklady={measure.naklady} />)}
+          {data?.map((measure, measureIdx) => (
+            <>
+              <Measure key={measure.id_zprava} popis={measure.popis} naklady={measure.naklady} />
+              {measureIdx !== data.length - 1 && (
+                <Stack my={2}>
+                  <Divider />
+                </Stack>
+              )}
+            </>
+          ))}
         </Stack>
       )}
 

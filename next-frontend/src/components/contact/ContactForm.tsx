@@ -1,16 +1,16 @@
+'use client'
+
 import { useCreateContact } from '@/queries/useCreateContact';
 import { Alert, Button, CircularProgress, Container, TextField, Typography } from '@mui/material';
 import { useFormik } from 'formik';
 import { useRouter } from 'next/navigation';
 import { object, string } from 'yup';
 
-const ContactForm = ({ stage, id }: { stage: number; id?: number }) => {
+const ContactForm = ({ stage, id, close }: { stage: number; id?: number, close: () => void }) => {
   const router = useRouter();
 
   const { mutate, isPending, error } = useCreateContact({
-    onSuccess: () => {
-      router.push(`/report/${id}/create/${Number(stage) + 1}`);
-    },
+    onSuccess: close,
   });
 
   const formik = useFormik({
@@ -23,12 +23,12 @@ const ContactForm = ({ stage, id }: { stage: number; id?: number }) => {
       popis: '',
     },
     validationSchema: object({
-      jmeno: string().required('Required'),
-      stredni_jmeno: string().required('Required'),
-      prijmeni: string().required('Required'),
-      telefonni_cislo: string().required('Required'),
-      email: string().required('Required'),
-      popis: string().required('Required'),
+      jmeno: string().required('Zadejte jméno'),
+      stredni_jmeno: string(),
+      prijmeni: string().required('Zadejte příjmení'),
+      telefonni_cislo: string(),
+      email: string(),
+      popis: string(),
     }),
     onSubmit: (values) => {
       if (!id) {
@@ -44,7 +44,7 @@ const ContactForm = ({ stage, id }: { stage: number; id?: number }) => {
 
   return (
     <Container maxWidth="sm">
-      <Typography variant="h4" component="h1" gutterBottom>
+      <Typography variant="h4" component="h1" gutterBottom textAlign="center">
         Kontakty
       </Typography>
       <form onSubmit={formik.handleSubmit}>
@@ -111,7 +111,7 @@ const ContactForm = ({ stage, id }: { stage: number; id?: number }) => {
           variant="outlined"
           {...formik.getFieldProps('popis')}
           error={formik.touched.popis && Boolean(formik.errors.popis)}
-          helperText={formik.touched.popis && formik.errors.popis} 
+          helperText={formik.touched.popis && formik.errors.popis}
         />
 
         <Button type="submit" variant="contained" color="primary" fullWidth disabled={isPending}>

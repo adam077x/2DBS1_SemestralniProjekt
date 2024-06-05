@@ -22,6 +22,8 @@ const Navigation = () => {
 
   const logOut = () => {
     localStorage.setItem('logged', 'false');
+    setLogged(false);
+    document.cookie = '';
     router.push('/login');
   };
 

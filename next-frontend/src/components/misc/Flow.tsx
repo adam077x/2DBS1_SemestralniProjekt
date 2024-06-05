@@ -27,7 +27,7 @@ const Flow = ({ stage, stages }: { stage: number; stages: Stage[] }) => {
         }
 
         return (
-          <Stack key={i} direction={'row'} gap={2}>
+          <Stack key={i} direction={'row'} gap={2} justifyContent="center" textAlign="center">
             <Stack>{s.component}</Stack>
           </Stack>
         );

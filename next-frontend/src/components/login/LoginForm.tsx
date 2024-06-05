@@ -11,7 +11,7 @@ const LoginForm = () => {
   const router = useRouter();
 
   const { mutate, isPending, error, data } = useLogin({
-    onSuccess: () => {
+    onSuccess: (data) => {
       console.log(data);
       document.cookie = `jwt=${data?.jwt}; path=/`;
       localStorage.setItem('logged', 'true');
@@ -25,8 +25,8 @@ const LoginForm = () => {
       password: '',
     },
     validationSchema: object({
-      email: string().email('Invalid email address').required('Required'),
-      password: string().required('Required'),
+      email: string().email('Invalid email address').required('Emailová adresa je povinná'),
+      password: string().required('Heslo je povinné'),
     }),
     onSubmit: (values) => {
       mutate(values);
@@ -35,8 +35,8 @@ const LoginForm = () => {
 
   return (
     <Container maxWidth="sm">
-      <Typography variant="h4" component="h1" gutterBottom>
-        Login
+      <Typography variant="h4" component="h1" fontWeight="bold" gutterBottom textAlign="center">
+        Přihlášení
       </Typography>
       <form onSubmit={formik.handleSubmit}>
         <TextField
