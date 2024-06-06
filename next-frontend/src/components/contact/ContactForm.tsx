@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useCreateContact } from '@/queries/useCreateContact';
 import { Alert, Button, CircularProgress, Container, TextField, Typography } from '@mui/material';
@@ -6,7 +6,7 @@ import { useFormik } from 'formik';
 import { useRouter } from 'next/navigation';
 import { object, string } from 'yup';
 
-const ContactForm = ({ stage, id, close }: { stage: number; id?: number, close: () => void }) => {
+const ContactForm = ({ stage, id, close }: { stage: number; id?: number; close: () => void }) => {
   const router = useRouter();
 
   const { mutate, isPending, error } = useCreateContact({
