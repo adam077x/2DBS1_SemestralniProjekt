@@ -52,7 +52,7 @@ const LoginForm = () => {
           required
         />
         <TextField
-          label="Password"
+          label="Heslo"
           type="password"
           fullWidth
           margin="normal"
@@ -63,7 +63,7 @@ const LoginForm = () => {
           required
         />
         <Button type="submit" variant="contained" color="primary" fullWidth disabled={isPending}>
-          {isPending ? <CircularProgress size={24} /> : 'Login'}
+          {isPending ? <CircularProgress size={24} /> : 'Přihlásit se'}
         </Button>
       </form>
       {error && (
