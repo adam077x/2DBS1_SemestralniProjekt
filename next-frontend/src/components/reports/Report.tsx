@@ -22,9 +22,9 @@ const Report = ({
         <ListItem key={id_zprava}>
           <ListItemText
             primary={titulek}
-            secondary={`Created: ${new Date(vytvoreno).toLocaleString()} - Updated: ${new Date(upraveno).toLocaleString()}`}
+            secondary={`Vytvořeno: ${new Date(vytvoreno).toLocaleString()} - Popis: ${popisek.length > 50 ? popisek.slice(0, 50) + '...' : popisek}`}
           />
-          <Button onClick={() => router.push(`/report/${id_zprava}`)}>Open Report</Button>
+          <Button onClick={() => router.push(`/report/${id_zprava}`)}>Otevřít zprávu</Button>
         </ListItem>
       </Stack>
 

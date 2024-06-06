@@ -33,18 +33,18 @@ const ReportFull = ({ id }: { id: number }) => {
               <Typography variant="h5">Obecné informace</Typography>
               <TextLabel label="Titulek" text={data.titulek}></TextLabel>
               <TextLabel label="Popisek" text={data.popisek}></TextLabel>
-              <TextLabel text={data.nazev_1} label="Téma"></TextLabel>
+              <TextLabel text={data.nazev} label="Téma"></TextLabel>
               <TextLabel label="Vytvoreno" text={format(new Date(data.vytvoreno), 'yyyy-MM-dd HH:mm')}></TextLabel>
               <TextLabel label="Upraveno" text={format(new Date(data.upraveno), 'yyyy-MM-dd HH:mm')}></TextLabel>
             </Stack>
 
             <Stack width="50%" ml={2} bgcolor="aliceblue" p={2}>
               <Typography variant="h5">Autor</Typography>
-              <TextLabel text={data.jmeno_1} label="Jméno"></TextLabel>
-              <TextLabel text={data.stredni_jmeno_1 || 'Není'} label="Střední jméno"></TextLabel>
-              <TextLabel text={data.prijmeni_1} label="Přijmení"></TextLabel>
-              <TextLabel text={data.email_1} label="Email"></TextLabel>
-              <TextLabel text={data.telefonni_cislo_1} label="Telefonní číslo"></TextLabel>
+              <TextLabel text={data.jmeno} label="Jméno"></TextLabel>
+              <TextLabel text={data.stredni_jmeno || 'Není'} label="Střední jméno"></TextLabel>
+              <TextLabel text={data.prijmeni} label="Přijmení"></TextLabel>
+              <TextLabel text={data.email} label="Email"></TextLabel>
+              <TextLabel text={data.telefonni_cislo} label="Telefonní číslo"></TextLabel>
             </Stack>
           </Stack>
         </Stack>

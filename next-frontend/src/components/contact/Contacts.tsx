@@ -1,5 +1,5 @@
 import { useContacts } from '@/queries/useContacts';
-import { CircularProgress, Divider, Stack } from '@mui/material';
+import { CircularProgress, Divider, Stack, Typography } from '@mui/material';
 import Contact from './Contact';
 
 const Contacts = ({ id_zprava }: { id_zprava: number }) => {
@@ -22,6 +22,9 @@ const Contacts = ({ id_zprava }: { id_zprava: number }) => {
             <Divider />
           </>
         ))}
+
+      {!isLoading && data?.length === 0 && <Typography textAlign="left">Žádné kontakty</Typography>}
+
       {isLoading && <CircularProgress />}
     </Stack>
   );

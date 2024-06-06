@@ -1,5 +1,5 @@
 import { useFeedbackList } from '@/queries/useFeedbackList';
-import { CircularProgress, Stack } from '@mui/material';
+import { CircularProgress, Stack, Typography } from '@mui/material';
 import Feedback from './Feedback';
 
 const FeedbackList = ({ id_zpravy }: { id_zpravy: number }) => {
@@ -19,6 +19,8 @@ const FeedbackList = ({ id_zpravy }: { id_zpravy: number }) => {
             prijmeni={feedback.prijmeni}
           />
         ))}
+
+      {!isLoading && data?.length === 0 && <Typography>Zatím nebyla přidána žádná zpětná vazba.</Typography>}
     </Stack>
   );
 };

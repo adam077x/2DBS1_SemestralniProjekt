@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER check_dokument_nazev
+create or replace NONEDITIONABLE TRIGGER check_dokument_nazev
 BEFORE INSERT OR UPDATE ON dokument
 FOR EACH ROW
 DECLARE
@@ -10,7 +10,7 @@ BEGIN
 END;
 
 
-CREATE OR REPLACE TRIGGER check_email_format
+create or replace NONEDITIONABLE TRIGGER check_email_format
 BEFORE INSERT OR UPDATE ON uzivatel
 FOR EACH ROW
 DECLARE
@@ -22,7 +22,7 @@ BEGIN
 END;
 
 
-CREATE OR REPLACE TRIGGER update_zprava_upraveno
+create or replace NONEDITIONABLE TRIGGER update_zprava_upraveno
 BEFORE UPDATE ON zprava
 FOR EACH ROW
 BEGIN

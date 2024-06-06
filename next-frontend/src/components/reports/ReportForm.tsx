@@ -37,7 +37,7 @@ const ReportForm = ({ stage }: { stage: number }) => {
   return (
     <Container maxWidth="sm">
       <Typography variant="h4" component="h1" gutterBottom>
-        Create Report
+        Vytvořit zprávu
       </Typography>
       <form onSubmit={formik.handleSubmit}>
         <TextField

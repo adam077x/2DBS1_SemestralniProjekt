@@ -15,6 +15,7 @@ const LoginForm = () => {
       console.log(data);
       document.cookie = `jwt=${data?.jwt}; path=/`;
       localStorage.setItem('logged', 'true');
+      window.dispatchEvent(new Event('storage'));
       router.push('/');
     },
   });

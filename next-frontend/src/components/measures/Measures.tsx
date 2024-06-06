@@ -1,5 +1,5 @@
 import { useMeausres } from '@/queries/useMeasures';
-import { CircularProgress, Divider, Stack } from '@mui/material';
+import { CircularProgress, Divider, Stack, Typography } from '@mui/material';
 import Measure from './Measure';
 
 const Measures = ({ id_zprava }: { id_zprava: number }) => {
@@ -19,6 +19,8 @@ const Measures = ({ id_zprava }: { id_zprava: number }) => {
               )}
             </>
           ))}
+
+          {!isLoading && data?.length === 0 && <Typography>Zatím nebyly přidány žádné opatření.</Typography>}
         </Stack>
       )}
 

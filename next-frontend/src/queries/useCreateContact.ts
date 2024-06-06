@@ -1,3 +1,4 @@
+import { getQueryClient } from '@/components/QueryClientProvider';
 import { api } from '@/utils/axiosConfig';
 import { UseMutationOptions, useMutation } from '@tanstack/react-query';
 
@@ -16,8 +17,14 @@ export const useCreateContact = (options?: UseMutationOptions<{}, Error, Contact
     mutationKey: ['contacts', 'contact'],
     mutationFn: async (values) => {
       const response = await api.post('/contacts/kontakt', values).catch((error) => {
-        throw new Error(error.response.data.message);
+        throw error;
       });
+
+      if (response.status === 201) {
+        getQueryClient().invalidateQueries({
+          queryKey: ['contacts'],
+        });
+      }
 
       return response.data;
     },

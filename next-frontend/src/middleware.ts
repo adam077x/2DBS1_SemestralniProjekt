@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 export function middleware(request: NextRequest) {
   const token = request.cookies.get('jwt');
 
-  if (!token) {
+  if (!token || token.value === '' || token.value === 'undefined') {
     return NextResponse.redirect(new URL('/login', request.url));
   }
 
@@ -12,5 +12,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/'],
+  matcher: ['/', '/report/:id*'],
 };

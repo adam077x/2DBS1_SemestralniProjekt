@@ -17,13 +17,27 @@ const Navigation = () => {
       } else {
         setLogged(false);
       }
+
+      const handleStorageChange = () => {
+        if (localStorage.getItem('logged') === 'true') {
+          setLogged(true);
+        } else {
+          setLogged(false);
+        }
+      };
+
+      window.addEventListener('storage', handleStorageChange);
+
+      return () => {
+        window.removeEventListener('storage', handleStorageChange);
+      };
     }
   }, []);
 
   const logOut = () => {
     localStorage.setItem('logged', 'false');
     setLogged(false);
-    document.cookie = '';
+    document.cookie = `jwt=; path=/`;
     router.push('/login');
   };
 

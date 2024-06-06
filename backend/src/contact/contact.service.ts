@@ -7,8 +7,6 @@ export class ContactService {
   constructor(private databaseService: DatabaseService) {}
 
   async NacistKontakty(id_zprava: number): Promise<any> {
-    console.log('NacistKontakty', id_zprava);
-
     const query = `
       BEGIN
         NacistKontakty(:id_zprava, :result_cursor);
